@@ -11,7 +11,7 @@ export default function Header() {
           alt="logo"
           width={150}
           height={150}
-          className="mr-40"
+          className="mr-20"
           priority={true}
         />
       </div>
