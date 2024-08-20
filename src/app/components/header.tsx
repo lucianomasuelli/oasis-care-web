@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Header() {
   const liStyle =
-    "border-[6px] border-transparent hover:border-[6px] hover:border-white py-2 px-6 ";
+    "border-[6px] border-transparent hover:border-[6px] hover:border-white py-2 px-6";
   return (
-    <header className="flex flex-row items-center justify-center z-50 mr-4 ">
+    <header className="flex flex-row items-center justify-center z-50 mr-4 overflow-hidden">
       <div className="flex">
         <Image
           src="/logo1.svg"
