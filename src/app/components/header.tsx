@@ -28,7 +28,7 @@ export default function Header({open, setOpen}: { open: boolean, setOpen: React.
           <a href="">Inicio</a>
         </li>
         <li className={liStyle}>
-          <a href="">Nosotros</a>
+          <a href="#nosotros">Nosotros</a>
         </li>
         <li className={liStyle}>
           <a href="">Servicios</a>
@@ -75,7 +75,7 @@ export default function Header({open, setOpen}: { open: boolean, setOpen: React.
             <a href="">Inicio</a>
           </li>
           <li className={liStyleMobile}>
-            <a href="">Nosotros</a>
+            <a href="#nosotros">Nosotros</a>
           </li>
           <li className={liStyleMobile}>
             <a href="">Servicios</a>

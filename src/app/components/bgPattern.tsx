@@ -6,7 +6,7 @@ export default function Pattern(props: {className: string}) {
     return (
         <div className={props.className}>
             <Image src='/tramas1.png' alt='tramas' width={834} height={1388}
-            className="object-contain"  />
+            className="object-contain "  />
         </div>
     )
 }

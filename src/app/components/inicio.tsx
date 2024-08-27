@@ -3,7 +3,7 @@ import { fustat, grotesk, ltInstitute } from "../fonts/fonts";
 
 export default function Inicio() {
   return (
-    <div className="flex flex-col self-center justify-center align-middle sm:mt-20 mt-40 mx-10 overflow-hidden ">
+    <div className="flex flex-col self-center justify-center align-middle sm:mt-20 mt-32 mx-10 overflow-hidden ">
       <Image
         src={"/logo2.png"}
         alt="logo"

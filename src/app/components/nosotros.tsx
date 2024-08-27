@@ -4,11 +4,11 @@ import Pattern from "./bgPattern";
 
 export default function Nosotros() {
   return (
-    <div className="h-screen overflow-y-visible">
+    <div className="h-screen overflow-y-visible" id="nosotros">
       <div
         className={`${grotesk.className} min-[1700px]:mx-60 xl:mx-40 lg:mx-40 md:mx-28 sm:mx-20 mx-10`}
       >
-        <div className="flex flex-col max-w-max pt-40 relative items-center">
+        <div className="flex flex-col max-w-max sm:pt-40 pt-32 relative items-center">
           <h1 className="text-black 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl font-light tracking-[0.2em] z-30 ">
             NOSOTROS
           </h1>
@@ -47,12 +47,12 @@ export default function Nosotros() {
             alt="wpp2"
             width={3024}
             height={4032}
-            className="object-contain 2xl:w-[500px] xl:w-[400px] sm:w-72 sm:absolute z-20 sm:border-8 border-4 border-background sm:mr-20 sm:-mt-14 my-5 sm:right-0 sm:hidden relative"
+            className="object-contain  z-20 border-4 border-background my-5 sm:hidden relative"
           />
       </div>
       <div className="flex flex-row justify-between sm:-mt-[600px] -mt-[600px] ">
-        <Pattern className="flex flex-row  justify-start sm:-ml-20 -ml-24  sm:mt-52 mt-40 sm:w-[30%] w-[45%] max-w-[500px] rotate-180 filter brightness-[70%]  absolute left-0 sm:opacity-100 opacity-90" />
-        <Pattern className="flex flex-row justify-end sm:-mt-52 -mt-80 pl-20 sm:w-[60%] w-[80%] absolute right-0 sm:opacity-80 opacity-30 " />
+        <Pattern className="flex flex-row  justify-start sm:-ml-20 -ml-24  sm:mt-52 mt-40 sm:w-[30%] w-[45%] max-w-[500px] rotate-180 filter brightness-[70%]  absolute left-0 sm:opacity-100 opacity-90 z-0" />
+        <Pattern className="flex flex-row justify-end sm:-mt-52 -mt-72 pl-20 sm:w-[60%] w-[80%] absolute right-0 sm:opacity-80 opacity-30 z-0" />
       </div>
     </div>
   );
