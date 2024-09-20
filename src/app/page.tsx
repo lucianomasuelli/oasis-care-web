@@ -43,18 +43,22 @@ export default function Home() {
   }, [prevScrollPos]);
 
   return (
-    <main className="bg-gradient-to-br from-background-500 from-60% via-40% to-background-600" id="inicio">
+    <main
+      className="bg-gradient-to-br from-background-500 from-60% via-40% to-background-600"
+      id="inicio"
+    >
       {/* Header con comportamiento dinámico en el fondo y visibilidad */}
       <div
-        className={`w-screen justify-center align-middle z-50 top-0 flex ${
-          scrolled ? "sticky" : "absolute"
-        } ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"} transition-transform duration-300 ease-in-out`}
+        id="header"
+        className={`w-screen justify-center align-middle z-50 top-0 flex fixed ${
+          scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+        } transition-transform duration-300 ease-in-out`}
       >
         <div
           className={`top-0 z-50 ${
             scrolled
-              ? "sticky bg-primaryGreen-500/80 backdrop-blur-sm shadow-lg max-w-[1000px] 2xl:w-[80%] md:w-[90%] sm:w-[90%] sm:h-24 h-16 align-middle flex justify-center mt-5 rounded-full"
-              : "bg-transparent absolute justify-center align-middle w-screen"
+              ? "sticky bg-primaryGreen-500/80 backdrop-blur-sm shadow-lg max-w-[1000px] 2xl:w-[80%] md:w-[90%] sm:w-[90%] sm:h-20 h-16 align-middle flex justify-center mt-5 rounded-full"
+              : "absolute bg-transparent  justify-center align-middle w-screen"
           } transition duration-300`}
         >
           <Header open={open} setOpen={setOpen} />

@@ -11,7 +11,7 @@ export default function Header({
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const liStyle =
-    "border-[6px] border-transparent hover:border-[6px] hover:border-white py-2 px-6";
+    "hover:border-[6px] border-[6px] border-transparent  hover:border-white py-2 px-6";
 
   const liStyleMobile =
     "border-[6px] border-transparent hover:border-[6px] focus:border-[6px] hover:border-white py-2 px-6 m-2 flex flex-col";
@@ -25,7 +25,7 @@ export default function Header({
           alt="logo"
           width={150}
           height={150}
-          className="sm:mr-20 sm:ml-0 ml-4 sm:size-auto size-[90px]"
+          className="sm:mr-10 sm:ml-0 ml-4 h-auto sm:w-28 size-[90px]"
           priority={true}
         /> 
         </a>
