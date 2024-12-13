@@ -6,6 +6,12 @@ import Inicio from "./components/inicio";
 import Nosotros from "./components/nosotros";
 import { useState, useEffect } from "react";
 import Servicios from "./components/servicesSection/servicios";
+import Contacto from "./components/contacto";
+import Proyectos from "./components/projectsSection/proyectos";
+import { Pattern2, Pattern3 } from "./components/bgPattern";
+import Pattern from "./components/bgPattern";
+import Footer from "./components/footer";
+import Workflow from "./components/workflowSection/workflow";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -77,8 +83,26 @@ export default function Home() {
         </div>
       </div>
 
-      <Nosotros />
-      <Servicios />
+      <div className={`${open ? "blur-sm " : "blur-none"} relative`}>
+        <Workflow />
+        <Servicios />
+        <Proyectos />
+        <Nosotros />
+        <Contacto />
+        <Footer />
+
+        {/* Backgground Patterns */}
+        <div className=" absolute top-0 left-0 w-full h-full pointer-events-none  ">
+          <Pattern2 className="flex flex-row top-[15%]  justify-start sm:-ml-20 -ml-24 2xl:mt-48 sm:mt-60 mt-40 sm:w-[25%] w-[45%] max-w-[500px] rotate-180 filter brightness-[120%] absolute left-0 opacity-100 saturate-100 z-0  " />
+
+          <Pattern className="flex flex-row top-[15%] justify-end sm:-mt-[40vh] -mt-72 pl-20 sm:w-[45%] sm:min-w-[600px] w-[80%] absolute right-0 min-[880px]:opacity-90 sm:opacity-30 opacity-30 z-0" />
+        </div>
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-x-hidden">
+          <Pattern3 className="absolute top-[50%] left-0 sm:left-20 w-[30%] sm:w-[400px] filter saturate-150 brightness-[100%] opacity-20 z-0" />
+          {/* <Pattern3 className="absolute top-[70%] left-[50%] sm:left-[40vw] w-[150px] filter saturate-100 brightness-[60%] rotate-90 opacity-10 z-0" /> */}
+          <Pattern2 className="absolute top-[50%] left-[70%] sm:left-[70vw] w-[1000px] filter saturate-100 brightness-[120%] rotate-0 opacity-80 z-0" />
+        </div>
+      </div>
     </main>
   );
 }

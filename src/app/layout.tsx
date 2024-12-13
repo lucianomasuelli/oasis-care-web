@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ltInstitute.className}>
+      <body className={`${ltInstitute.className}`}>
         
         {children}
       </body>

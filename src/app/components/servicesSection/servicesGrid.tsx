@@ -1,32 +1,37 @@
 import ServiceCard from "./serviceCard";
 
+
 export default function ServicesGrid() {
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-0 gap-4 justify-center justify-items-center ">
+        <div className="grid md:grid-cols-2 sm:grid-cols-2 md:gap-4 gap-4 min-[900px]:justify-stretch max-w-[60rem] items-center align-middle self-center justify-center ">
+
             <ServiceCard
                 title="Sistema de Riego"
-                description="oicdjodsicjsoi de cnciosd cjml sdcoj cisdjmclsdk csdlc lkcmsdlkcm"
+                description=" <strong>Diseño e instalación:</strong> Sistemas personalizados y eficientes para cada jardín. </br>
+                
+                <strong>Mantenimiento y calibración:</strong> Revisiones y ajustes para un riego óptimo y sostenible."
                 icon={"/riego.svg"}
             />
             <ServiceCard
                 title="Diseño de jardines y especios verdes"
-                description="oicdjodsicjsoi"
+                description="<strong>Proyectos personalizados:</strong> 
+                Diseño funcional y estético según tus necesidades. </br>
+                <strong>Evaluación y asesoramiento:</strong> Análisis del terreno y selección de especies adecuadas. </br> 
+                <strong> Sostenibilidad: </strong> Enfoque xeropaisajístico para reducir el consumo de agua."
                 icon={"/jardines.svg"}
             />
             <ServiceCard
-                title="Mantenimiento de jardines"
-                description="oicdjodsicjsoi"
+                title="Mantenimiento"
+                description="<strong>Podas y limpiezas:</strong> Mantén tu espacio verde impecable. </br> 
+                <strong>Desmalezado:</strong> Eliminamos hierbas invasoras. </br>
+                <strong>Puestas a punto:</strong> Renovamos y optimizamos áreas específicas."
                 icon={"/flor.svg"}
             />
             <ServiceCard
-                title="Nivelación del terreno"
-                description="oicdjodsicjsoi"
+                title="Movimiento de suelos"
+                description="<strong>Nivelación.</strong> </br>
+                <strong>Preparación del terreno:</strong> Suelo listo para vegetación o construcción."
                 icon={"/terreno.svg"}
-            />
-            <ServiceCard
-                title="Xeropaisajismo"
-                description="oicdjodsicjsoi"
-                icon={"/xero.svg"}
             />
         </div>
     );

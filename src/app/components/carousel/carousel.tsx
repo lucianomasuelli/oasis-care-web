@@ -22,36 +22,37 @@ export default function ServicesCarousel() {
         <div className="embla__slide">
           <ServiceCard
             title="Sistema de Riego"
-            description="oicdjodsicjsoi de cnciosd cjml sdcoj cisdjmclsdk csdlc lkcmsdlkcm"
+            description="<strong>Diseño e instalación:</strong> Sistemas personalizados y eficientes para cada jardín. </br>
+                
+                <strong>Mantenimiento y calibración:</strong> Revisiones y ajustes para un riego óptimo y sostenible."
             icon={"/riego.svg"}
           />
         </div>
         <div className="embla__slide">
           <ServiceCard
             title="Diseño de jardines y especios verdes"
-            description="oicdjodsicjsoi"
+            description="<strong>Proyectos personalizados:</strong> 
+                Diseño funcional y estético según tus necesidades. </br>
+                <strong>Evaluación y asesoramiento:</strong> Análisis del terreno y selección de especies adecuadas. </br> 
+                <strong> Sostenibilidad: </strong> Enfoque xeropaisajístico para reducir el consumo de agua."
             icon={"/jardines.svg"}
           />
         </div>
         <div className="embla__slide">
           <ServiceCard
-            title="Mantenimiento de jardines"
-            description="oicdjodsicjsoi"
+            title="Mantenimiento"
+            description="<strong>Podas y limpiezas:</strong> Mantén tu espacio verde impecable. </br> 
+                <strong>Desmalezado:</strong> Eliminamos hierbas invasoras. </br>
+                <strong>Puestas a punto:</strong> Renovamos y optimizamos áreas específicas."
             icon={"/flor.svg"}
           />
         </div>
         <div className="embla__slide">
           <ServiceCard
-            title="Nivelación del terreno"
-            description="oicdjodsicjsoi"
+            title="Movimiento de suelos"
+            description="<strong>Nivelación.</strong> </br>
+                <strong>Preparación del terreno:</strong> Suelo listo para vegetación o construcción."
             icon={"/terreno.svg"}
-          />
-        </div>
-        <div className="embla__slide">
-          <ServiceCard
-            title="Xeropaisajismo"
-            description="oicdjodsicjsoi"
-            icon={"/xero.svg"}
           />
         </div>
       </div>

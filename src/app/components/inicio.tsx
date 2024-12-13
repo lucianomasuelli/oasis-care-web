@@ -11,7 +11,7 @@ export default function Inicio() {
         alt="logo"
         width={4000}
         height={880}
-        className="w-[60%] min-w-[600px] self-center sm:block hidden"
+        className="w-[60vw] min-w-[600px] self-center sm:block hidden"
       />
       <Image
         src={"/logoMobile.png"}
@@ -20,7 +20,7 @@ export default function Inicio() {
         height={880}
         className="h-[60%] self-center sm:hidden"
       />
-      <p className=" md:w-[50%] sm:w-[40%] w-full text-white opacity-80 xl:text-3xl lg:text-2xl md:text-xl sm:text-xl font-[400] sm:ml-[15%] p-4 sm:mt-10 mt-10 sm:text-left text-justify ">
+      <p className=" md:w-[50%] sm:w-[40%] w-full text-white opacity-80 xl:text-2xl lg:text-2xl md:text-xl sm:text-xl font-[400] sm:ml-[15%] p-4 sm:mt-10 mt-10 sm:text-left text-justify ">
         Fusionando la naturaleza con el arte, creando espacios que inspiran,
         relajan y revitalizan a quienes los disfrutan.
       </p>

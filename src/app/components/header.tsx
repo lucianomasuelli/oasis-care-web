@@ -16,6 +16,14 @@ export default function Header({
   const liStyleMobile =
     "border-[6px] border-transparent hover:border-[6px] focus:border-[6px] hover:border-white py-2 px-6 m-2 flex flex-col";
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="flex flex-row w-full sm:h-auto h-auto items-center sm:justify-center justify-between z-50 mr-4 overflow-hidden ">
       <div className="flex">
@@ -34,16 +42,16 @@ export default function Header({
 
       <ul className="sm:flex flex-row items-center justify-center lg:gap-10  font-medium text-white lg:text-lg sm:text-md hidden ">
         <li className={liStyle}>
-          <a href="#nosotros">Nosotros</a>
+          <a href="#nosotros" onClick={(e) => handleClick(e, "nosotros")}>Nosotros</a>
         </li>
         <li className={liStyle}>
-          <a href="#servicios">Servicios</a>
+          <a href="#servicios" onClick={(e) => handleClick(e, "servicios")}>Servicios</a>
         </li>
         <li className={liStyle}>
-          <a href="">Proyectos</a>
+          <a href="#proyectos" onClick={(e) => handleClick(e, "proyectos")}>Proyectos</a>
         </li>
         <li className={liStyle}>
-          <a href="">Contacto</a>
+          <a href="#contacto" onClick={(e) => handleClick(e, "contacto")}>Contacto</a>
         </li>
       </ul>
 
@@ -76,19 +84,19 @@ export default function Header({
           <ul
             className={`${
               open ? "top-0 " : "-top-[100vh] "
-            }  duration-200 flex flex-col w-[90%] self-center items-center justify-center font-medium text-white bg-primaryGreen-500/95 backdrop-blur-sm absolute py-5 right-5 rounded-3xl sm:hidden mt-24 shadow-2xl z-50 `}
+            } duration-200 flex flex-col w-[90%] self-center items-center justify-center font-medium text-white bg-primaryGreen-500/95 backdrop-blur-sm absolute py-5 right-5 rounded-3xl sm:hidden mt-24 shadow-2xl z-50 `}
           >
             <li className={liStyleMobile}>
-              <a href="#nosotros">Nosotros</a>
+              <a href="#nosotros" onClick={(e) => handleClick(e, "nosotros")}>Nosotros</a>
             </li>
             <li className={liStyleMobile}>
-              <a href="#servicios">Servicios</a>
+              <a href="#servicios" onClick={(e) => handleClick(e, "servicios")}>Servicios</a>
             </li>
             <li className={liStyleMobile}>
-              <a href="">Proyectos</a>
+              <a href="#proyectos" onClick={(e) => handleClick(e, "proyectos")}>Proyectos</a>
             </li>
             <li className={liStyleMobile}>
-              <a href="">Contacto</a>
+              <a href="#contacto" onClick={(e) => handleClick(e, "contacto")}>Contacto</a>
             </li>
           </ul>
         </div>
