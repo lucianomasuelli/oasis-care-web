@@ -19,9 +19,9 @@ export const projects = [
     title: "Ejemplo 2",
     description: "Reforma de la casa de la abuela",
     images: [
-      { id: 1, src: "/casa1.JPG" },
-      { id: 2, src: "/casa2.JPG" },
-      { id: 3, src: "/casa3.JPG" },
+      { id: 1, src: "" },
+      { id: 2, src: "" },
+      { id: 3, src: "" },
     ],
   },
   {
@@ -29,9 +29,9 @@ export const projects = [
     title: "Ejemplo 3",
     description: "Diseño y mantenimiento del jardín",
     images: [
-      { id: 1, src: "/jardin1.JPG" },
-      { id: 2, src: "/jardin2.JPG" },
-      { id: 3, src: "/jardin3.JPG" },
+      { id: 1, src: "" },
+      { id: 2, src: "" },
+      { id: 3, src: "" },
     ],
   },
   {
@@ -39,9 +39,9 @@ export const projects = [
     title: "Ejemplo 4",
     description: "Construcción de piscina",
     images: [
-      { id: 1, src: "/piscina1.JPG" },
-      { id: 2, src: "/piscina2.JPG" },
-      { id: 3, src: "/piscina3.JPG" },
+      { id: 1, src: "" },
+      { id: 2, src: "" },
+      { id: 3, src: "" },
     ],
   },
   {
@@ -49,9 +49,9 @@ export const projects = [
     title: "Ejemplo 5",
     description: "Reforma de la terraza",
     images: [
-      { id: 1, src: "/terraza1.JPG" },
-      { id: 2, src: "/terraza2.JPG" },
-      { id: 3, src: "/terraza3.JPG" },
+      { id: 1, src: "" },
+      { id: 2, src: "" },
+      { id: 3, src: "" },
     ],
   },
   {
@@ -59,9 +59,9 @@ export const projects = [
     title: "Ejemplo 6",
     description: "Construcción de valla",
     images: [
-      { id: 1, src: "/valla1.JPG" },
-      { id: 2, src: "/valla2.JPG" },
-      { id: 3, src: "/valla3.JPG" },
+      { id: 1, src: "" },
+      { id: 2, src: "" },
+      { id: 3, src: "" },
     ],
   },
 ];

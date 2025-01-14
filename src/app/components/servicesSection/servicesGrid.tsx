@@ -4,20 +4,22 @@ import { useState, useEffect } from "react";
 
 export default function ServicesGrid() {
   const [scrollPosition, setScrollPosition] = useState(0);
-  
+
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY + window.innerHeight / 2);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        setScrollPosition(window.scrollY + window.innerHeight / 2);
+      };
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
   const getAnimationClass = (index: number) => {
     const baseClass = "transform duration-700 ease-out";
     const translateClass = "scale-0";
     const activeClass = "scale-100";
-    const elementPosition = index * window.innerHeight + 900/index;
+    const elementPosition = 100 * index
     const isVisible = scrollPosition > elementPosition; // Adjust this threshold for smoother, more gradual transitions
     return `${baseClass} ${isVisible ? activeClass : translateClass}`;
   };

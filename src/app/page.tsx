@@ -20,32 +20,35 @@ export default function Home() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-
-      // Detectar si se está haciendo scroll hacia arriba o hacia abajo
-      if (currentScrollPos > prevScrollPos) {
-        setScrollDirection("down");
-      } else {
-        setScrollDirection("up");
-      }
-
-      // Cambia el estado de `scrolled` dependiendo de la posición de scroll
-      if (currentScrollPos > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-
-      // Actualiza la posición previa del scroll
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if(typeof window !== "undefined") {
+      const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+  
+        // Detectar si se está haciendo scroll hacia arriba o hacia abajo
+        if (currentScrollPos > prevScrollPos) {
+          setScrollDirection("down");
+        } else {
+          setScrollDirection("up");
+        }
+  
+        // Cambia el estado de `scrolled` dependiendo de la posición de scroll
+        if (currentScrollPos > 100) {
+          setScrolled(true);
+        } else {
+          setScrolled(false);
+        }
+  
+        // Actualiza la posición previa del scroll
+        setPrevScrollPos(currentScrollPos);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+    
   }, [prevScrollPos]);
 
   return (
