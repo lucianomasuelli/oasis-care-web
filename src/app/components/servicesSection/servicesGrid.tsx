@@ -19,7 +19,10 @@ export default function ServicesGrid() {
     const baseClass = "transform duration-700 ease-out";
     const translateClass = "scale-0";
     const activeClass = "scale-100";
-    const elementPosition = 100 * index
+    var elementPosition = 500 * index
+    if(typeof window !== "undefined"){
+      elementPosition = window.innerHeight + 700 * index;
+    }
     const isVisible = scrollPosition > elementPosition; // Adjust this threshold for smoother, more gradual transitions
     return `${baseClass} ${isVisible ? activeClass : translateClass}`;
   };

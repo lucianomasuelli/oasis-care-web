@@ -35,8 +35,8 @@ const Proyectos = () => {
                     src={image.src}
                     alt="chozos"
                     key={image.id}
-                    width={900}
-                    height={500}
+                    width={300}
+                    height={300}
                     className={`${
                       image.id === 5
                         ? "sm:block hidden col-start-1 col-end-3 w-[40vw] h-[15vw] "
