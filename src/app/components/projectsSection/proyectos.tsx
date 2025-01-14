@@ -4,50 +4,73 @@ import React from "react";
 import SectionTitle from "../sectionTitle";
 import Image from "next/image";
 import { grotesk, fustat } from "@/app/fonts/fonts";
+import ProjectsInfo from "./projectsInfo";
 
 const Proyectos = () => {
+
+  // Detect if screen is mobile
+  const isMobile = () => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768;
+    }
+  };
+
   return (
-    <div className={`${grotesk.className} sm:mt-20 mt:0 relative min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-10 z-10`} id="proyectos">
+    <div
+      className={`${grotesk.className} sm:mt-20 mt:0 relative min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-10 z-10`}
+      id="proyectos"
+    >
       <SectionTitle title="PROYECTOS" />
 
-    <div className="my-10 ">
-      <Accordion showDivider={false} defaultExpandedKeys={["1"]}>
-        {projects.map((project) => (
-          <AccordionItem
-            key={project.id}
-            aria-label={project.title}
-            title={project.title}
-            classNames={
-              {
-                base:"sm:my-4 my-2 ",
-                title: `${fustat.className} text-[#E5EAC3] sm:text-2xl text-xl `,
-                heading: " bg-gradient-to-r from-[#2D2D2D] to-[#646853] border-[#E5EAC3] border-2 rounded-xl sm:p-4 py-2 px-4 h-[10vh]   ",
-                content: "bg-[#ECECDD] border-[#646853] border-2 rounded-xl p-4",
-              }
-            }
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="my-10 ">
+        {projects.map((project, key) =>
+          project.id % 2 == 0 || isMobile() ? (
+            <div key={key} className="flex sm:flex-row flex-col gap-4 mb-10">
               <div>
-                <p>{project.description}</p>
+                <ProjectsInfo project={project} />
               </div>
-              <div className={`grid grid-cols-2 md:grid-cols-3 gap-4  justify-stretch `}>
+              <div className={`grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 sm:justify-stretch `}>
                 {project.images.map((image, index) => (
                   <Image
                     src={image.src}
                     alt="chozos"
                     key={image.id}
-                    width={1000}
-                    height={400}
-                    className={`${image.id === 1 ? "col-span-3 h-[200px] " : "h-[200px]"} ${image.id === 4 ? "sm:block hidden" : ""} w-full object-cover rounded-xl hover:scale-150 hover:-translate-y-20 duration-300`}
+                    width={900}
+                    height={500}
+                    className={`${
+                      image.id === 5
+                        ? "sm:block hidden col-start-1 col-end-3 w-[40vw] h-[15vw] "
+                        : " sm:w-[20vw] sm:h-[15vw]"
+                    } h-48 object-cover rounded-lg duration-300 saturate-150`}
                   />
                 ))}
               </div>
             </div>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
-      
+          ) : (
+            <div key={key} className="flex sm:flex-row flex-col gap-4 mb-10">
+              <div className={`grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 justify-stretch  `}>
+                {project.images.map((image, index) => (
+                  <Image
+                    src={image.src}
+                    alt="chozos"
+                    key={image.id}
+                    width={700}
+                    height={500}
+                    className={` ${
+                      image.id === 5
+                        ? "sm:block hidden col-start-1 col-end-3 w-[40vw] h-[15vw]"
+                        : " sm:w-[20vw] sm:h-[15vw] "
+                    } h-48 object-cover rounded-lg duration-300 saturate-150`}
+                  />
+                ))}
+              </div>
+              <div className="w-[40%]">
+                <ProjectsInfo project={project} />
+              </div>
+            </div>
+          )
+        )}
+      </div>
     </div>
   );
 };

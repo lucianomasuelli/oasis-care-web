@@ -24,13 +24,13 @@ export default function Footer() {
           <h3 className="font-bold mb-4">Síguenos</h3>
           <div className="flex space-x-4">
             <a href="https://facebook.com" target="_blank">
-              <Image src="" alt="Facebook" />
+              {/* <Image src="#" alt="Facebook" /> */}
             </a>
             <a href="https://instagram.com" target="_blank">
-              <Image src="" alt="Instagram" />
+              {/* <Image src="#" alt="Instagram" /> */}
             </a>
             <a href="https://twitter.com" target="_blank">
-              <Image src="" alt="Twitter" />
+              {/* <Image src="#" alt="Twitter" /> */}
             </a>
           </div>
         </div>

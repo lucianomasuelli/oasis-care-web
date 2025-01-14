@@ -8,7 +8,11 @@ export const projects = [
       { id: 2, src: "/chozos2.JPG" },
       { id: 3, src: "/chozos3.jpeg" },
       {id: 4, src: "/chozos4.jpeg"},
+      {id: 5, src: "/chozos5.jpeg"},
     ],
+    services: [
+      { id: 1, name: "Mantenimiento" },
+    ]
   },
   {
     id: 2,

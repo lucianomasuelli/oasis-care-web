@@ -33,7 +33,7 @@ export default function Header({
           alt="logo"
           width={150}
           height={150}
-          className="sm:mr-10 sm:ml-0 ml-4 h-auto sm:w-28 size-[90px]"
+          className="sm:mr-10 sm:ml-0 ml-0 h-auto sm:transform-none transform scale-50 sm:w-[8rem] "
           priority={true}
         /> 
         </a>

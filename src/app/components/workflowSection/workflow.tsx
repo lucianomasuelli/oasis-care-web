@@ -24,7 +24,7 @@ export default function Workflow() {
   };
 
   return (
-    <div className={`${grotesk.className} z-10 relative mt-10`}>
+    <div className={`${grotesk.className} z-10 relative mt-10 overflow-x-hidden`}>
       <div className="min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-0">
         <SectionTitle title="FLUJO DE TRABAJO" />
       </div>

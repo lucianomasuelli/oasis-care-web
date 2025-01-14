@@ -21,39 +21,108 @@ export default function ServicesCarousel() {
       <div className="embla__container ">
         <div className="embla__slide">
           <ServiceCard
-            title="Sistema de Riego"
-            description="<strong>Diseño e instalación:</strong> Sistemas personalizados y eficientes para cada jardín. </br>
-                
-                <strong>Mantenimiento y calibración:</strong> Revisiones y ajustes para un riego óptimo y sostenible."
-            icon={"/riego.svg"}
-          />
+            title="Diseño de jardines y especios verdes"
+            icon={"/jardines.svg"}
+            color="#B9CCAD"
+            textColor="#445A47"
+          >
+            <div className="flex flex-col h-[80%] align-middle justify-between mt-2">
+              <p>
+                <strong>Proyectos personalizados: </strong>
+                Diseño funcional y estético adaptado a las necesidades
+                específicas de cada cliente, garantizando originalidad y
+                personalización.
+              </p>
+              <p>
+                <strong>Evaluación y asesoramiento:</strong> Análisis detallado
+                del terreno y selección adecuada de las especies vegetales más
+                idóneas para el entorno.
+              </p>
+              <p>
+                <strong>Sostenibilidad:</strong> Aplicación de técnicas
+                xeropaisajísticas para reducir el consumo de agua y promover la
+                sostenibilidad ambiental.
+              </p>
+            </div>
+          </ServiceCard>
         </div>
         <div className="embla__slide">
           <ServiceCard
-            title="Diseño de jardines y especios verdes"
-            description="<strong>Proyectos personalizados:</strong> 
-                Diseño funcional y estético según tus necesidades. </br>
-                <strong>Evaluación y asesoramiento:</strong> Análisis del terreno y selección de especies adecuadas. </br> 
-                <strong> Sostenibilidad: </strong> Enfoque xeropaisajístico para reducir el consumo de agua."
-            icon={"/jardines.svg"}
-          />
+            title="Sistema de Riego"
+            icon={"/riego.svg"}
+            color="#C1C69C"
+            textColor="#646853"
+          >
+            <div className="flex flex-col h-[80%] align-middle justify-between mt-2">
+              <p>
+                <strong>Diseño e instalación:</strong> Creación de sistemas de
+                riego personalizados y eficientes, optimizados para las
+                características del jardín.
+              </p>
+              <p>
+                <strong>Automatización inteligente:</strong> Configuración de
+                sistemas automatizados para la eficiencia hídrica y la
+                programación de riegos según condiciones climáticas.
+              </p>
+              <p>
+                <strong>Mantenimiento y calibración:</strong> Servicios de
+                ajuste y revisión periódica para garantizar un riego preciso y
+                sostenible.
+              </p>
+            </div>
+          </ServiceCard>
         </div>
         <div className="embla__slide">
           <ServiceCard
             title="Mantenimiento"
-            description="<strong>Podas y limpiezas:</strong> Mantén tu espacio verde impecable. </br> 
-                <strong>Desmalezado:</strong> Eliminamos hierbas invasoras. </br>
-                <strong>Puestas a punto:</strong> Renovamos y optimizamos áreas específicas."
             icon={"/flor.svg"}
-          />
+            color="#445A47"
+            textColor="#B9CCAD"
+          >
+            <div className="flex flex-col h-[80%] align-middle justify-between mt-2">
+              <p>
+                <strong>Podas y limpiezas:</strong> Mantenimiento estético y
+                sanitario de jardines, eliminando ramas secas y residuos
+                vegetales.
+              </p>
+              <p>
+                <strong>Desmalezado:</strong> Eliminación de hierbas invasoras
+                para preservar la salud de las plantas y la estética del espacio
+                verde.
+              </p>
+              <p>
+                <strong>Puestas a punto:</strong> Renovación y optimización de
+                zonas específicas para mantener la vitalidad y la apariencia
+                impecable del jardín.
+              </p>
+            </div>
+          </ServiceCard>
         </div>
         <div className="embla__slide">
           <ServiceCard
             title="Movimiento de suelos"
-            description="<strong>Nivelación.</strong> </br>
-                <strong>Preparación del terreno:</strong> Suelo listo para vegetación o construcción."
             icon={"/terreno.svg"}
-          />
+            color="#646853"
+            textColor="#E5EAC3"
+          >
+            <div className="flex flex-col h-[80%] align-middle justify-between mt-2">
+              <p>
+                <strong>Nivelación:</strong> Ajuste de la topografía del terreno
+                para asegurar una base uniforme y preparada para la vegetación o
+                la construcción.
+              </p>
+              <p>
+                <strong>Preparación del terreno:</strong> Acondicionamiento del
+                suelo para hacerlo apto para la siembra de vegetación o la
+                ejecución de proyectos de construcción.
+              </p>
+              <p>
+                <strong>Compactación del suelo:</strong> Proceso de
+                consolidación del terreno para mejorar la estabilidad y la
+                resistencia de la base.
+              </p>
+            </div>
+          </ServiceCard>
         </div>
       </div>
 

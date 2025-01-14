@@ -93,9 +93,9 @@ export default function Home() {
 
         {/* Backgground Patterns */}
         <div className=" absolute top-0 left-0 w-full h-full pointer-events-none  ">
-          <Pattern2 className="flex flex-row top-[15%]  justify-start sm:-ml-20 -ml-24 2xl:mt-48 sm:mt-60 mt-40 sm:w-[25%] w-[45%] max-w-[500px] rotate-180 filter brightness-[120%] absolute left-0 opacity-100 saturate-100 z-0  " />
+          <Pattern2 className="flex flex-row top-[35%]  justify-start sm:-ml-20 -ml-24 2xl:mt-48 sm:mt-60 mt-40 sm:w-[25%] w-[45%] max-w-[500px] rotate-180 filter brightness-[120%] absolute left-0 opacity-100 saturate-100 z-0  " />
 
-          <Pattern className="flex flex-row top-[15%] justify-end sm:-mt-[40vh] -mt-72 pl-20 sm:w-[45%] sm:min-w-[600px] w-[80%] absolute right-0 min-[880px]:opacity-90 sm:opacity-30 opacity-30 z-0" />
+          <Pattern className="flex flex-row top-[25%] justify-end sm:-mt-[40vh] -mt-72 pl-20 sm:w-[45%] sm:min-w-[600px] w-[80%] absolute right-0 min-[880px]:opacity-30 sm:opacity-30 opacity-30 z-0" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-x-hidden">
           <Pattern3 className="absolute top-[50%] left-0 sm:left-20 w-[30%] sm:w-[400px] filter saturate-150 brightness-[100%] opacity-20 z-0" />
