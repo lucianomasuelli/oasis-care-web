@@ -3,8 +3,17 @@ import { grotesk } from "../fonts/fonts";
 import { useState } from "react";
 import Pattern from "./bgPattern";
 import Image from "next/image";
+import { Select, SelectSection, SelectItem } from "@nextui-org/select";
 
 export default function Contacto() {
+  const services = [
+    { key: "Diseño de jardines y espacios verdes", value: "Diseño de jardines y espacios verdes" },
+    { key: "Sistemas de riego", value: "Sistemas de riego" },
+    { key: "Mantenimiento de jardines", value: "Mantenimiento de jardines" },
+    { key: "Movimiento de suelos", value: "Movimiento de suelos" },
+  ];
+
+  const [service, setService] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,22 +27,14 @@ export default function Contacto() {
     setFormData({ ...formData, [e.currentTarget.name]: e.currentTarget.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (res.ok) {
-      alert("El mensaje fue enviado exitosamente.");
-    } else {
-      alert("Hubo un problema al enviar el mensaje.");
-    }
+    const { name, email, service, message } = formData;
+    const whatsappNumber = "5492615380020"; // Reemplazar con el número de WhatsApp deseado
+    const whatsappMessage = `Hola! Mi nombre es ${name}. %0AEstoy interesado/a en el servicio de ${service}. %0A${message}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    window.open(whatsappLink, "_blank");
+    console.log(whatsappLink)
   };
 
   const labelStyle = "flex flex-col text-white items-center my-2";
@@ -62,28 +63,37 @@ export default function Contacto() {
             className={inputStyle}
           />
         </label>
-        <label className={labelStyle}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className={inputStyle}
-          />
-        </label>
-        <label className={labelStyle}>
-          <input
-            type="text"
+        <div className="flex flex-col items-center my-2 text-color-white">
+          <Select
+            label="Servicio"
+            variant="underlined"
             name="service"
-            placeholder="Servicio"
+            color="primary"
             value={formData.service}
-            onChange={handleChange}
             required
-            className={inputStyle}
-          />
-        </label>
+            className="w-[80%] "
+            radius="none"
+            onChange={(e) => {
+              setService(e.target.value);
+              setFormData({ ...formData, service: e.target.value });
+              console.log(e.target.value);
+            }}
+            classNames={{
+              base: "text-white",
+              listboxWrapper:
+                " text-white bg-[#646853] border-2 border-white p-2",
+              mainWrapper: "text-white bg-[#646853] border-2 border-white ",
+              description: "text-white",
+            }}
+          >
+            {services.map((service) => (
+              <SelectItem key={service.key} value={service.key}>
+                {service.value}
+              </SelectItem>
+            ))}
+          </Select>
+        </div>
+
         <label className={labelStyle}>
           <textarea
             name="message"

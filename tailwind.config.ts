@@ -6,7 +6,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(accordion|divider).js"
+    "./node_modules/@nextui-org/theme/dist/components/(divider|dropdown|dropdown-menu|dropdown-trigger|select|select-item|select-section).js"
   ],
   theme: {
     extend: {
@@ -46,6 +46,26 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes:{
+      light: {
+        colors: {
+          //Gris claro
+          primary:"#B8B8B8",
+          foreground: "#B8B8B8",
+          background: "#B8B8B8",
+        }
+      },
+      dark: {
+        colors: {
+          primary:"#84BC3C",
+          foreground: "#EAEBE2",
+          background: "#39392A",
+
+        }
+      }
+    }
+  })],
+  
 };
 export default config;

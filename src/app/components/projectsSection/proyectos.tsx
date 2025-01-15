@@ -1,4 +1,3 @@
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { projects } from "@/app/data/projects";
 import React from "react";
 import SectionTitle from "../sectionTitle";
@@ -17,7 +16,7 @@ const Proyectos = () => {
 
   return (
     <div
-      className={`${grotesk.className} sm:mt-20 mt:0 relative min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-10 z-10`}
+      className={`${grotesk.className} sm:mt-20 mt:0 relative min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-10 z-10 text-black `}
       id="proyectos"
     >
       <SectionTitle title="PROYECTOS" />
