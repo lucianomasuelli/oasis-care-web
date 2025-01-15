@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Paisajismo en Chozos Resort",
-    description: "Puesta a punto y mantenimento de los paisajes de Chozos",
+    description: "Puesta a punto y mantenimento de los paisajes de Chozos Resort.",
     images: [
       { id: 1, src: "/chozos1.JPG" },
       { id: 2, src: "/chozos2.JPG" },
@@ -16,52 +16,19 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Ejemplo 2",
-    description: "Reforma de la casa de la abuela",
+    title: "Proyectos residenciales",
+    description: "Diseño y construcción de paisajes en residencias.",
     images: [
-      { id: 1, src: "" },
-      { id: 2, src: "" },
-      { id: 3, src: "" },
+      { id: 1, src: "/residenciales1.JPG" },
+      { id: 2, src: "/residenciales3.PNG" },
+      { id: 3, src: "/residenciales4.PNG" },
+      { id: 4, src: "/residenciales5.JPG" },
+      { id: 5, src: "/residenciales2.JPG" },
     ],
+    services: [
+      { id: 1, name: "Diseño" },
+      { id: 2, name: "Mantenimiento" },
+    ]
   },
-  {
-    id: 3,
-    title: "Ejemplo 3",
-    description: "Diseño y mantenimiento del jardín",
-    images: [
-      { id: 1, src: "" },
-      { id: 2, src: "" },
-      { id: 3, src: "" },
-    ],
-  },
-  {
-    id: 4,
-    title: "Ejemplo 4",
-    description: "Construcción de piscina",
-    images: [
-      { id: 1, src: "" },
-      { id: 2, src: "" },
-      { id: 3, src: "" },
-    ],
-  },
-  {
-    id: 5,
-    title: "Ejemplo 5",
-    description: "Reforma de la terraza",
-    images: [
-      { id: 1, src: "" },
-      { id: 2, src: "" },
-      { id: 3, src: "" },
-    ],
-  },
-  {
-    id: 6,
-    title: "Ejemplo 6",
-    description: "Construcción de valla",
-    images: [
-      { id: 1, src: "" },
-      { id: 2, src: "" },
-      { id: 3, src: "" },
-    ],
-  },
+
 ];
