@@ -41,8 +41,8 @@ const Proyectos = () => {
                       height={500}
                       className={` ${
                         image.id === 5
-                          ? "sm:block hidden col-start-1 col-end-3 w-[40vw] h-[25vw]"
-                          : " sm:w-[20vw] sm:h-[15vw]  "
+                          ? "sm:block hidden col-start-1 col-end-3 w-[100%] h-[25vw]"
+                          : " sm:w-[25vw] sm:h-[20vw]  "
                       } h-80 object-cover duration-300 saturate-150 rounded-tr-[50px] rounded-bl-[50px]`}
                     />
                   ): (
@@ -61,7 +61,7 @@ const Proyectos = () => {
           ) : (
             <div key={key} className="flex sm:flex-row flex-col gap-4 mb-20">
               <div
-                className={`grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 justify-stretch  `}
+                className={`grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 justify-stretch`}
               >
                 {project.images.map(
                   (image, index) => (
@@ -74,8 +74,8 @@ const Proyectos = () => {
                         height={500}
                         className={` ${
                           image.id === 5
-                            ? "sm:block hidden col-start-1 col-end-3 w-[40vw] h-[25vw]"
-                            : " sm:w-[20vw] sm:h-[15vw] "
+                            ? "sm:block hidden col-start-1 col-end-3 w-[100%] h-[25vw]"
+                            : " sm:w-[25vw] sm:h-[20vw] "
                         } h-72 object-cover duration-300 saturate-150 rounded-tr-[50px] rounded-bl-[50px]`}
                       />
                     ): (
