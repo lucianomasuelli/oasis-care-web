@@ -101,9 +101,10 @@ export default function Home() {
           <Pattern className="flex flex-row top-[25%] justify-end sm:-mt-[40vh] -mt-72 pl-20 sm:w-[45%] sm:min-w-[600px] w-[80%] absolute right-0 min-[880px]:opacity-30 sm:opacity-30 opacity-30 z-0" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-x-hidden">
-          <Pattern3 className="absolute top-[50%] left-0 sm:left-20 w-[30%] sm:w-[400px] filter saturate-150 brightness-[100%] opacity-20 z-0" />
+          <Pattern3 className="absolute top-[62%] left-0 sm:left-20 w-[30%] sm:w-[400px] filter saturate-150 brightness-[100%] opacity-20 z-0" />
           {/* <Pattern3 className="absolute top-[70%] left-[50%] sm:left-[40vw] w-[150px] filter saturate-100 brightness-[60%] rotate-90 opacity-10 z-0" /> */}
           <Pattern2 className="absolute top-[50%] left-[70%] sm:left-[70vw] w-[1000px] filter saturate-100 brightness-[120%] rotate-0 opacity-80 z-0" />
+          <Pattern className="flex flex-row top-[80%] justify-end sm:-mt-[40vh] -mt-72 pl-20 sm:w-[45%] sm:min-w-[600px] w-[80%] absolute left-0 min-[880px]:opacity-30 sm:opacity-30 opacity-30 z-0 rotate-180" />
         </div>
       </div>
     </main>

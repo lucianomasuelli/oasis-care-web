@@ -12,7 +12,7 @@ export default function Servicios() {
         className={`${grotesk.className} pt-10  min-[1700px]:mx-80 xl:mx-60 lg:mx-40 min-[900px]:mx-20 md:mx-0 mx-0`} id="servicios"
       >
         <div className="mx-10 mb-0">
-          <SectionTitle title="SERVICIOS" position="items-end" />
+          <SectionTitle title="SERVICIOS" position="items-start" />
         </div>
 
         <div className="hidden  min-[900px]:flex items-center justify-center align-middle ">

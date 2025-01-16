@@ -24,7 +24,10 @@ export default function Inicio() {
         Fusionando la naturaleza con el arte, creando espacios que inspiran,
         relajan y revitalizan a quienes los disfrutan.
       </p>
-      <button className="text-white xl:text-2xl font-medium border-4 p-2 xl:w-60 xl:h-20 w-40  self-center sm:mt-20 mt-10 backdrop-blur-md hover:-translate-y-1 hover:shadow-2xl hover:border-[#E5EAC3] xl:active:w-56 active:w-36 active:backdrop-blur-none  duration-200 ">Contactanos</button>
+      <a href="#contacto" className="self-center">
+        <button  className="text-white xl:text-2xl font-medium border-4 p-2 xl:w-60 xl:h-20 w-40   sm:mt-20 mt-10 backdrop-blur-md hover:-translate-y-1 hover:shadow-2xl hover:border-[#E5EAC3] xl:active:w-56 active:w-36 active:backdrop-blur-none  duration-200 ">Contactanos</button>
+      </a>
+      
     </div>
   );
 }
