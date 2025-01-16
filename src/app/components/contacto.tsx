@@ -30,7 +30,7 @@ export default function Contacto() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { name, email, service, message } = formData;
-    const whatsappNumber = "5492615380020"; // Reemplazar con el número de WhatsApp deseado
+    const whatsappNumber = "5492616839870"; // Reemplazar con el número de WhatsApp deseado
     const whatsappMessage = `Hola! Mi nombre es ${name}. %0AEstoy interesado/a en el servicio de ${service}. %0A${message}`;
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
     window.open(whatsappLink, "_blank");
