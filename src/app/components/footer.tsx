@@ -5,11 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className={`${grotesk.className} bg-[#313129] text-white p-10 overflow-hidden`}>
-      <div className="container mx-20 flex flex-wrap justify-center gap-60">
+      <div className="container sm:mx-20 flex flex-wrap justify-center sm:gap-60">
 
 
         {/* Sección de contacto */}
-        <div className="w-auto md:w-1/4 mb-6">
+        <div className="w-full md:w-1/4 mb-6">
           <h3 className="font-bold mb-4">Contactanos</h3>
           <p className="font-normal">
             Email:{" "}
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
 
         {/* <!-- Sección de redes sociales --> */}
-        <div className=" w-min md:w-1/4 mb-6 ">
+        <div className=" w-full md:w-1/4 mb-6 ">
           <h3 className="font-bold mb-4">Seguinos</h3>
           <div className="flex space-x-4">
             <a href="https://www.instagram.com/oasiscare_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
