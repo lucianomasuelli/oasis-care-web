@@ -20,7 +20,7 @@ export default function WorkPatternR(props: {
             fill={props.color}
           ></rect>
         </svg>
-        <div className="absolute inset-0 flex flex-col items-left justify-center ml-[30%] w-[60%] ">
+        <div className="absolute inset-0 flex flex-col items-left justify-center md:ml-[20%] ml-[30%] w-[60%] ">
           <div className="flex align-middle items-center">
             <Image src={props.image} alt={props.alt} width={50} height={50} className=" size-10 sm:size-auto" />
             <h1 className="text-white font-bold sm:text-3xl text-2xl">{props.number}</h1>
