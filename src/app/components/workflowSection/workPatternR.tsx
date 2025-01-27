@@ -10,7 +10,7 @@ export default function WorkPatternR(props: {
 }) {
   return (
     <div className="flex justify-end w-full">
-      <div className=" relative w-[100vw] sm:w-[80vw] sm:h-[35vh] h-[35vh] overflow-hidden rounded-l-[200px] -mt-5">
+      <div className=" relative w-[100vw] sm:w-[80vw] sm:h-[35vh] h-[37vh] min-h-[300px] overflow-hidden rounded-l-[200px] -mt-5">
         <svg width="100%" height="100%">
           <rect
             x="0"
@@ -20,7 +20,7 @@ export default function WorkPatternR(props: {
             fill={props.color}
           ></rect>
         </svg>
-        <div className="absolute inset-0 flex flex-col items-left justify-center ml-[20%] w-[68%] ">
+        <div className="absolute inset-0 flex flex-col items-left justify-center ml-[30%] w-[60%] ">
           <div className="flex align-middle items-center">
             <Image src={props.image} alt={props.alt} width={50} height={50} className=" size-10 sm:size-auto" />
             <h1 className="text-white font-bold sm:text-3xl text-2xl">{props.number}</h1>

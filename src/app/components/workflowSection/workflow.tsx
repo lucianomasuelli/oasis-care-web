@@ -68,7 +68,7 @@ export default function Workflow() {
             color="#74A865"
             number="04"
             title="Revisión final y Mantenimiento"
-            text="Te explicamos los requisitos de riego y fertilización para le óptimo crecimiento de tu jardín. También ofrecemos servicio de mantenimiento del mismo."
+            text="Te explicamos cómo regar y fertilizar tu jardín para un crecimiento óptimo. También ofrecemos servicio de mantenimiento."
             image="/elem4.png"
             alt="revision"
           />
