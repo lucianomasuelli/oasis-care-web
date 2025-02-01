@@ -1,59 +1,59 @@
 # 🌿 Oasis Care - Landing Page
 
-Landing page desarrollada para **Oasis Care** utilizando **Next.js, TypeScript y TailwindCSS**. Esta web presenta la forma de trabajo de la empresa, los servicios que ofrece y sus proyectos más relevantes. Además, incluye un formulario que permite contactar a la empresa mediante **WhatsApp**.
+Landing page developed for **Oasis Care** using **Next.js, TypeScript, and TailwindCSS**. This website presents the company's workflow, the services it offers, and its most relevant projects. Additionally, it includes a form that allows users to contact the company via **WhatsApp**.
 
-## 🌍 Demo en Vivo
-[🔗 Ver Demo](#https://oasis-care-web.vercel.app/) 
-
----
-
-## 📌 Características
-- **Flujo de trabajo**: Explicación del proceso que sigue la empresa.
-- **Servicios**: Descripción de los principales servicios que ofrece.
-- **Proyectos**: Sección con los proyectos más relevantes.
-- **Nosotros**: Información sobre la empresa y su equipo.
-- **Contacto**: Formulario que redirige a WhatsApp para comunicación directa.
+## 🌍 Live Demo
+[🔗 View Demo](#https://oasis-care-web.vercel.app/) 
 
 ---
 
-## 🚀 Tecnologías Utilizadas
-- ⚡ [Next.js](https://nextjs.org/) - Framework para React con SSR y SSG.
-- 📌 [TypeScript](https://www.typescriptlang.org/) - Tipado estático para un código más robusto.
-- 🎨 [TailwindCSS](https://tailwindcss.com/) - Framework de estilos para un diseño moderno y responsivo.
+## 📌 Features
+- **Workflow**: Explanation of the company's process.
+- **Services**: Description of the main services offered.
+- **Projects**: Section showcasing the most relevant projects.
+- **About Us**: Information about the company and its team.
+- **Contact**: Form that redirects to WhatsApp for direct communication.
 
 ---
 
-## 🛠 Instalación y Uso
+## 🚀 Technologies Used
+- ⚡ [Next.js](https://nextjs.org/) - Framework for React with SSR and SSG.
+- 📌 [TypeScript](https://www.typescriptlang.org/) - Static typing for more robust code.
+- 🎨 [TailwindCSS](https://tailwindcss.com/) - Styling framework for a modern and responsive design.
 
-Sigue estos pasos para ejecutar el proyecto localmente:
+---
+
+## 🛠 Installation and Usage
+
+Follow these steps to run the project locally:
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/lucianomasuelli/oasis-care-web.git
 
-# Entrar al directorio
+# Enter the directory
 cd oasis-care-landing
 
-# Instalar dependencias
-npm install  # o yarn install
+# Install dependencies
+npm install  # or yarn install
 
-# Ejecutar en modo desarrollo
-npm run dev  # o yarn dev
+# Run in development mode
+npm run dev  # or yarn dev
 
-# Abrir en el navegador
+# Open in the browser
 http://localhost:3000
 ```
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 ```
-/public               -> Imágenes y recursos estáticos
-/src/app/components   -> Componentes reutilizables
+/public               -> Static images and resources
+/src/app/components   -> Reusable components
 ```
 
 ---
 
-📜 **Licencia**
-Este proyecto está bajo la licencia MIT. ¡Siéntete libre de utilizarlo y mejorarlo! 🎉
+📜 **License**
+This project is under the MIT license. Feel free to use and improve it! 🎉
 
